@@ -2,8 +2,8 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <React.Fragment>
     <header>
+      <div className="logo">Tubby Toast</div>
       <nav>
         Home
         About
@@ -11,8 +11,8 @@ const Header = () => {
         Contact
       </nav>
     </header>
-    </React.Fragment>
   );
 };
 
 export default Header;
+
