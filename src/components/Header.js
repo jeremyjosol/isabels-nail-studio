@@ -1,14 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <header>
-      <div className="logo">Tubby Toast</div>
+      <div className="tubby-toast">Tubby Toast</div>
       <nav>
-        Home
-        About
-        Social Media
-        Contact
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/social-media">Social Media</Link>
+        <Link to="/contact">Contact</Link>
       </nav>
     </header>
   );
