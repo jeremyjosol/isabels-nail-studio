@@ -30,9 +30,17 @@ a {
   color: pink;
 }
 
+a:hover {
+  text-shadow: 0 0 10px rgba(246, 205, 243, 0.8);
+}
+
 .brand {
   color: rgb(246, 205, 243);
   text-shadow: 0 0 10px rgba(246, 205, 243, 0.8);
+}
+
+.brand:hover {
+  color: rgb(255, 182, 250);
 }
 
 .about {
