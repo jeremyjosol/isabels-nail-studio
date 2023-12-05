@@ -19,7 +19,7 @@ const ContactForm = () => {
 
   return (
     <section className='contact-form'>
-      <h2>Contact Tubby Toast</h2>
+      <br />
       <form onSubmit={handleSubmit}>
         <input 
           placeholder='Name'
@@ -40,7 +40,7 @@ const ContactForm = () => {
           name='message' 
           value={formData.message} 
           onChange={handleChange} />
-
+        <br />
         <button type='submit'>Submit</button>
       </form>
     </section>
