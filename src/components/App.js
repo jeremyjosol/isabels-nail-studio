@@ -12,6 +12,7 @@ const App = () => {
         <Header />
         <Routes>
           <Route path='/about' element={<About />} />
+          <Route path='/social-media' element={<SocialMedia />} />
           <Route path='/contact' element={<ContactForm />} />
         </Routes>
         </div>
