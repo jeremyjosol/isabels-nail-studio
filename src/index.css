@@ -143,3 +143,9 @@ h2 {
 .instagram {
   color: black;
 }
+
+.feed {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
