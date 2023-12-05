@@ -5,9 +5,10 @@ import logo from '.././img/logo.jpg';
 const Header = () => {
   return (
     <header>
-      <div className="tubby-toast">
-       <h1>통통한 토스트</h1>
+      <div className='tubby-toast'>
         <img src={logo} alt='logo' className='logo-image' />
+        <h1 className='brand'>Tubby Toast</h1>
+        <h2 className='brand'>통통한 토스트</h2>
       </div>
       <nav>
         <Link to="/about">About</Link>

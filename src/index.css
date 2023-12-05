@@ -1,10 +1,14 @@
+header {
+  margin-top: 50px;
+}
+
 body {
   margin: auto;
   text-align: center;
   font-family: 'Work Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(100deg, #e9c8f6, #f46b39, #b28cec);
+  background: linear-gradient(100deg, #fac6f2, #e6460cdb, #b28cec);
   min-height: 100vh;
   color: black
 }
@@ -20,12 +24,34 @@ img {
   border-radius: 75px;
 }
 
-.titles {
-  font-family: 'Lora', serif;
-}
-
 a {
   margin-left: 20px;
   text-decoration: none;
+  color: pink;
+}
+
+.brand {
+  color: rgb(246, 205, 243);
+}
+
+.about {
+  width: 350px;
+  margin: auto;
+}
+
+.light {
+  font-style: italic;
+}
+
+h1 {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-size: 3em;
+}
+
+h2 {
+  margin-top: 0px;
+  font-size: 2em;
+  font-weight: lighter;
 }
 
