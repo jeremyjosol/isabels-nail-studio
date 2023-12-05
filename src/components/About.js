@@ -17,7 +17,7 @@ const About = () => {
 
       <p>Once your appointment is confirmed, please expect a follow-up confirmation message with specific details about my private studio.</p>
 
-      <button className="btn btn-primary toggle-button" onClick={toggleDetails}>
+      <button className="btn btn-info toggle-button" onClick={toggleDetails}>
         {isDetailsVisible ? <FiChevronUp /> : <FiChevronDown />}
         {isDetailsVisible ? 'Less' : 'More'}
       </button>

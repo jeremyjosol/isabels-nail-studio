@@ -6,11 +6,14 @@ const Header = () => {
   return (
     <header>
       <div className='tubby-toast'>
-        <img src={logo} alt='logo' className='logo-image' />
-        <h1 className='brand'>Tubby Toast</h1>
-        <h2 className='brand'>통통한 토스트</h2>
+        <div className="logo-container">
+          <hr className="line" />
+          <img src={logo} alt='logo' className='logo-image' />
+          <h1 className='brand'>Tubby Toast</h1>
+          <h2 className='brand'>통통한 토스트</h2>
+          <hr className="line" />
+        </div>        
       </div>
-      <br />
       <nav>
         <Link to='/about'>About</Link>
         <Link to='/services'>Services</Link>
