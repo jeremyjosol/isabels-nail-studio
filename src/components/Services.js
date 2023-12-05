@@ -48,37 +48,39 @@ const Services = () => {
         {servicesData.map((service) => (
           <div
             key={service.id}
-            className="service-card"
+            className={`service-card ${selectedService === service ? 'selected' : ''}`}
             onClick={() => handleServiceClick(service)}
           >
-            <div
-              className="service-image"
-              style={{
-                backgroundImage: `url(${service.image})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                width: '350px',
-                height: '350px',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                position: 'relative',
-              }}
-            >
-              <div className="service-overlay"></div>
-              <div className="service-name">
-                <span style={{ 
-                  fontSize: '1.2em',
-                  fontWeight: 'bolder',
-                  color: 'white',
-                  position: 'absolute', 
-                  left: '50%', 
-                  top: '50%', 
-                  transform: 'translate(-50%, -50%)' }}>
-                  {service.name.toUpperCase()}
-                </span>
+            {selectedService !== service && (
+              <div
+                className="service-image"
+                style={{
+                  backgroundImage: `url(${service.image})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  width: '350px',
+                  height: '350px',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  position: 'relative',
+                }}
+              >
+                <div className="service-overlay"></div>
+                <div className="service-name">
+                  <span style={{ 
+                    fontSize: '1.2em',
+                    fontWeight: 'bolder',
+                    color: 'white',
+                    position: 'absolute', 
+                    left: '50%', 
+                    top: '50%', 
+                    transform: 'translate(-50%, -50%)' }}>
+                    {service.name.toUpperCase()}
+                  </span>
+                </div>
               </div>
-            </div>
+            )}
           </div>
         ))}
       </div>
