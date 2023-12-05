@@ -8,7 +8,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(100deg, #c8a1d7, #f66c3a, #cc8cec);
   min-height: 100vh;
-  color: white;
+  color: black
 }
 
 code {
@@ -20,5 +20,9 @@ img {
   width: 100px;
   height: 100px;
   border-radius: 75px;
+}
+
+.titles {
+  font-family: 'Lora', serif;
 }
 

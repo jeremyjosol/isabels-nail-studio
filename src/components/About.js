@@ -10,7 +10,9 @@ const About = () => {
 
   return (
     <section className="about">
-      <h2>About Tubby Toast</h2>
+      <span className='titles'>
+        <h2>About Tubby Toast</h2>
+      </span>
       <p>
         Custom Korean/Japanese manicures based in Portland, Oregon.
       </p>
