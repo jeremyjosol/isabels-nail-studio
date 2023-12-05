@@ -62,13 +62,17 @@ const Services = () => {
                 position: 'relative',
               }}
             >
+              <div className="service-overlay"></div>
               <div className="service-name">
                 <span style={{ 
+                  fontSize: '1.2em',
+                  fontWeight: 'bolder',
+                  color: 'white',
                   position: 'absolute', 
                   left: '50%', 
                   top: '50%', 
                   transform: 'translate(-50%, -50%)' }}>
-                  {service.name}
+                  {service.name.toUpperCase()}
                 </span>
               </div>
             </div>
