@@ -46,11 +46,8 @@ a:hover {
 .about, .services {
   width: 350px;
   margin: auto;
-  padding-bottom: 20px;
-}
-
-.services {
   margin-top: 25px;
+  padding-bottom: 20px;
 }
 
 .light {
@@ -93,5 +90,3 @@ h2 {
 .service-overlay:hover {
   background-color: rgba(0, 0, 0, 0);
 }
-
-

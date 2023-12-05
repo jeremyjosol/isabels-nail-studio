@@ -19,7 +19,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="contact-form container mt-5">
+    <section className="contact-form container mt-3">
       <h3>
         <AiOutlineMail className="icons" /> Contact
       </h3>

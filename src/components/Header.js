@@ -10,6 +10,7 @@ const Header = () => {
         <h1 className='brand'>Tubby Toast</h1>
         <h2 className='brand'>통통한 토스트</h2>
       </div>
+      <br />
       <nav>
         <Link to='/about'>About</Link>
         <Link to='/services'>Services</Link>
