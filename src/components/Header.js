@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '.././img/logo.jpg';
+import { FaStar } from "react-icons/fa6";
 
 const Header = () => {
   return (
@@ -9,7 +10,7 @@ const Header = () => {
         <div className="logo-container">
           <hr className="line" />
           <img src={logo} alt='logo' className='logo-image' />
-          <h1 className='brand'>Tubby Toast</h1>
+          <h1 className='brand'><FaStar className='icons' />Tubby Toast<FaStar className='icons' /></h1>
           <h2 className='brand'>통통한 토스트</h2>
           <hr className="line" />
         </div>        

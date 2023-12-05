@@ -60,6 +60,10 @@ h1 {
   font-size: 3em;
 }
 
+h1 .icons {
+  font-size: 0.45em;
+}
+
 h2 {
   margin-top: 0px;
   font-size: 1.2em;
