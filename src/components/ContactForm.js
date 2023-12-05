@@ -19,30 +19,43 @@ const ContactForm = () => {
   };
 
   return (
-    <section className='contact-form'>
-      <h3><AiOutlineMail className='icons' /> Contact</h3>
+    <section className="contact-form container mt-5">
+      <h3>
+        <AiOutlineMail className="icons" /> Contact
+      </h3>
       <form onSubmit={handleSubmit}>
-        <input 
-          placeholder='Name'
-          type='text' 
-          name='name' 
-          value={formData.name} 
-          onChange={handleChange} />
-        <br />
-        <input 
-          placeholder='Email'
-          type='email' 
-          name='email' 
-          value={formData.email}
-          onChange={handleChange} />
-        <br />
-        <textarea 
-          placeholder='Custom message'
-          name='message' 
-          value={formData.message} 
-          onChange={handleChange} />
-        <br />
-        <button type='submit'>Submit</button>
+        <div className="mb-3">
+          <input
+            className="form-control"
+            placeholder="Name"
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="mb-3">
+          <input
+            className="form-control"
+            placeholder="Email"
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="mb-3">
+          <textarea
+            className="form-control"
+            placeholder="Custom message"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+          />
+        </div>
+        <button type="submit" className="btn btn-primary">
+          Submit
+        </button>
       </form>
     </section>
   );
