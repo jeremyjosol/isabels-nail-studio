@@ -78,8 +78,18 @@ h2 {
   vertical-align: middle;
 }
 
+.service-card {
+  position: relative;
+  overflow: hidden;
+}
+
 .service-image {
-  margin-bottom: 5px;
+  background-size: cover;
+  background-position: center;
+  width: 350px;
+  height: 350px;
+  position: relative;
+  transition: filter 0.3s ease; 
 }
 
 .service-overlay {
@@ -89,11 +99,31 @@ h2 {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.476);
-  transition: background-color 0.3s ease; 
+  transition: background-color 0.3s ease;
 }
 
-.service-overlay:hover {
+.service-card:hover .service-image {
+  filter: brightness(80%);
+}
+
+.service-card:hover .service-overlay {
   background-color: rgba(0, 0, 0, 0);
+}
+
+.service-name {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; 
+  color: white;
+  font-size: 2.3em;
+  font-weight: bolder;
+}
+
+
+.service-card.selected .service-image {
+  filter: none;
 }
 
 .line {

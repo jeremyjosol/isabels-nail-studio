@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import nailPhoto from './../img/nail-art.jpg';
 
 const Services = () => {
@@ -32,6 +32,7 @@ const Services = () => {
     },
   ];
 
+  
   const [selectedService, setSelectedService] = useState(null);
 
   const handleServiceClick = (service) => {
@@ -51,36 +52,17 @@ const Services = () => {
             className={`service-card ${selectedService === service ? 'selected' : ''}`}
             onClick={() => handleServiceClick(service)}
           >
-            {selectedService !== service && (
-              <div
-                className="service-image"
-                style={{
-                  backgroundImage: `url(${service.image})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  width: '350px',
-                  height: '350px',
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  position: 'relative',
-                }}
-              >
-                <div className="service-overlay"></div>
-                <div className="service-name">
-                  <span style={{ 
-                    fontSize: '2.3em',
-                    fontWeight: 'bolder',
-                    color: 'white',
-                    position: 'absolute', 
-                    left: '50%', 
-                    top: '50%', 
-                    transform: 'translate(-50%, -50%)' }}>
-                    {service.name.toUpperCase()}
-                  </span>
-                </div>
+            <div
+              className="service-image"
+              style={{
+                backgroundImage: `url(${service.image})`,
+              }}
+            >
+              <div className="service-overlay"></div>
+              <div className="service-name">
+                {service.name.toUpperCase()}
               </div>
-            )}
+            </div>
           </div>
         ))}
       </div>
@@ -89,7 +71,7 @@ const Services = () => {
         <div className="service-details">
           <h3>{selectedService.name} | ${selectedService.price}</h3>
           <p className="light">{selectedService.description}</p>
-          <button onClick={handleCloseDetails}>Close</button>
+          <button className='btn btn-info' onClick={handleCloseDetails}>Close</button>
         </div>
       )}
     </section>
