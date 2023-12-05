@@ -1,5 +1,5 @@
 header {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 body {
@@ -35,7 +35,7 @@ a:hover {
 }
 
 .brand {
-  color: rgb(246, 205, 243);
+  color: rgb(173, 253, 192);
   text-shadow: 0 0 10px rgba(246, 205, 243, 0.8);
 }
 
@@ -43,9 +43,10 @@ a:hover {
   color: rgb(255, 182, 250);
 }
 
-.about {
+.about, .services {
   width: 350px;
   margin: auto;
+  padding-bottom: 20px;
 }
 
 .light {
@@ -64,25 +65,14 @@ h2 {
   font-weight: lighter;
 }
 
-.route-transition {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+.social-icons {
+  margin: auto;
 }
 
-.route-enter {
-  opacity: 0;
+.handle {
+  font-size: 16px;
 }
 
-.route-enter-active {
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.route-exit {
-  opacity: 1;
-}
-
-.route-exit-active {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+.icons {
+  vertical-align: middle;
 }

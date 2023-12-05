@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { AiOutlineMail } from "react-icons/ai";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -19,7 +20,7 @@ const ContactForm = () => {
 
   return (
     <section className='contact-form'>
-      <br />
+      <h3><AiOutlineMail className='icons' /> Contact</h3>
       <form onSubmit={handleSubmit}>
         <input 
           placeholder='Name'

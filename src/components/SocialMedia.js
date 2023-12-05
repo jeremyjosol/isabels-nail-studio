@@ -5,14 +5,17 @@ const SocialMedia = () => {
   return (
     <section className="social-media">
       <br />
-      <h2>Follow us on Instagram</h2>
-      <div className="social-icons">
-        <a href="https://www.instagram.com/nails.tubbytoast" target="_blank" rel="noopener noreferrer">
-          <FaInstagram />
+        <a
+          href="https://www.instagram.com/nails.tubbytoast"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaInstagram className='icons' /> Instagram |
+          <span className='handle'> @nails.tubbytoast</span>
         </a>
-      </div>
     </section>
   );
 };
 
 export default SocialMedia;
+
