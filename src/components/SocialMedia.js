@@ -10,7 +10,7 @@ const SocialMedia = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaInstagram className='icons' /> Instagram |
+          <span className='instagram'><FaInstagram className='icons' /> Instagram </span> |
           <span className='handle'> @nails.tubbytoast</span>
         </a>
     </section>
