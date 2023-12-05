@@ -11,7 +11,7 @@ const About = () => {
   return (
     <section className="about">
       <span className='titles'>
-        <h2>About Tubby Toast</h2>
+        <h2>About</h2>
       </span>
       <p>
         Custom Korean/Japanese manicures based in Portland, Oregon.

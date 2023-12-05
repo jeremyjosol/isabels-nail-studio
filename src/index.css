@@ -1,12 +1,10 @@
 body {
   margin: auto;
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Work Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(100deg, #c8a1d7, #f66c3a, #cc8cec);
+  background: linear-gradient(100deg, #e9c8f6, #f46b39, #b28cec);
   min-height: 100vh;
   color: black
 }
@@ -24,5 +22,10 @@ img {
 
 .titles {
   font-family: 'Lora', serif;
+}
+
+a {
+  margin-left: 20px;
+  text-decoration: none;
 }
 
