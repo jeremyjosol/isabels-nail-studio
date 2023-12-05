@@ -21,7 +21,7 @@ const About = () => {
 
       <button className="toggle-button" onClick={toggleDetails}>
         {isDetailsVisible ? <FiChevronUp /> : <FiChevronDown />}
-        {isDetailsVisible ? 'Hide' : 'Services'}
+        {isDetailsVisible ? 'Less' : 'More'}
       </button>
       {isDetailsVisible && (
         <div className="details">
