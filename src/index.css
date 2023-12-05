@@ -150,3 +150,8 @@ h2 {
   justify-content: center;
   margin-top: 10px;
 }
+
+.submit {
+  color: white;
+  width: 325px;
+}
