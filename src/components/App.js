@@ -11,7 +11,8 @@ const App = () => {
         <div className='about'>
         <Header />
         <Routes>
-          <Route path="/about" element={<About />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<ContactForm />} />
         </Routes>
         </div>
       </Router>
