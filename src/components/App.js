@@ -5,20 +5,74 @@ import About from './About';
 import Services from './Services';
 import SocialMedia from './SocialMedia';
 import ContactForm from './ContactForm';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import './transition.css';
 
 const App = () => {
   return (
-      <Router>
-        <div className='about'>
+    <Router>
+      <div className='about'>
         <Header />
         <Routes>
-          <Route path='/about' element={<About />} />
-          <Route path='/services' element={<Services />} />
-          <Route path='/social-media' element={<SocialMedia />} />
-          <Route path='/contact' element={<ContactForm />} />
+          <Route
+            path='/about'
+            element={
+              <TransitionGroup>
+                <CSSTransition
+                  key='about'
+                  timeout={500}
+                  classNames='route'
+                >
+                  <About />
+                </CSSTransition>
+              </TransitionGroup>
+            }
+          />
+          <Route
+            path='/services'
+            element={
+              <TransitionGroup>
+                <CSSTransition
+                  key='services'
+                  timeout={500}
+                  classNames='route'
+                >
+                  <Services />
+                </CSSTransition>
+              </TransitionGroup>
+            }
+          />
+          <Route
+            path='/social-media'
+            element={
+              <TransitionGroup>
+                <CSSTransition
+                  key='social-media'
+                  timeout={500}
+                  classNames='route'
+                >
+                  <SocialMedia />
+                </CSSTransition>
+              </TransitionGroup>
+            }
+          />
+          <Route
+            path='/contact'
+            element={
+              <TransitionGroup>
+                <CSSTransition
+                  key='contact'
+                  timeout={500}
+                  classNames='route'
+                >
+                  <ContactForm />
+                </CSSTransition>
+              </TransitionGroup>
+            }
+          />
         </Routes>
-        </div>
-      </Router>
+      </div>
+    </Router>
   );
 };
 

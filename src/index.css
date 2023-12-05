@@ -64,3 +64,25 @@ h2 {
   font-weight: lighter;
 }
 
+.route-transition {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.route-enter {
+  opacity: 0;
+}
+
+.route-enter-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.route-exit {
+  opacity: 1;
+}
+
+.route-exit-active {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
