@@ -11,9 +11,10 @@ const Header = () => {
         <h2 className='brand'>통통한 토스트</h2>
       </div>
       <nav>
-        <Link to="/about">About</Link>
-        <Link to="/social-media">Social Media</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to='/about'>About</Link>
+        <Link to='/services'>Services</Link>
+        <Link to='/social-media'>Social Media</Link>
+        <Link to='/contact'>Contact</Link>
       </nav>
     </header>
   );
