@@ -69,7 +69,7 @@ const Services = () => {
                 <div className="service-overlay"></div>
                 <div className="service-name">
                   <span style={{ 
-                    fontSize: '1.2em',
+                    fontSize: '2.3em',
                     fontWeight: 'bolder',
                     color: 'white',
                     position: 'absolute', 
