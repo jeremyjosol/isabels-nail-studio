@@ -14,6 +14,15 @@ const About = () => {
       <p>
         Custom Korean/Japanese manicures based in Portland, Oregon.
       </p>
+      <button className="toggle-button" onClick={toggleDetails}>
+        {isDetailsVisible ? <FiChevronUp /> : <FiChevronDown />}
+        {isDetailsVisible ? 'Less' : 'More'}
+      </button>
+      {isDetailsVisible && (
+        <div className="details">
+          <p>Specialized in various nail techniques, including nail art, extensions, and more.</p>
+        </div>
+      )}
     </section>
   );
 };
