@@ -17,15 +17,13 @@ const About = () => {
 
       <p>Once your appointment is confirmed, please expect a follow-up confirmation message with specific details about my private studio.</p>
 
-      <p>There is a <strong>non-refundable</strong> deposit of $25 that goes towards the total cost of your manicure.</p>
-
       <button className="toggle-button" onClick={toggleDetails}>
         {isDetailsVisible ? <FiChevronUp /> : <FiChevronDown />}
         {isDetailsVisible ? 'Less' : 'More'}
       </button>
       {isDetailsVisible && (
         <div className="details">
-          <p>Specialized in various nail techniques, including nail art, extensions, and more.</p>
+          <p>There is a <strong>non-refundable</strong> deposit of $25 that goes towards the total cost of your service.</p>
         </div>
       )}
     </section>
