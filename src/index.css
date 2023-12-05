@@ -6,7 +6,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(100deg, #ffbdf4, #e6460cdb, #b28cec);
   min-height: 100vh;
-  color: black
+  color: black;
 }
 
 code {
@@ -33,7 +33,7 @@ a:hover {
 .brand {
   color: rgb(173, 253, 192);
   text-shadow: 0 0 10px rgba(246, 205, 243, 0.8);
-  font-family: 'Rubik Puddles'
+  font-family: 'Rubik Puddles';
 }
 
 .brand:hover {
@@ -58,7 +58,19 @@ h1 {
 }
 
 h1 .icons {
-  font-size: 0.45em;
+  font-size: 0.45em; 
+  display: inline-block; 
+  position: relative; 
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 h2 {
