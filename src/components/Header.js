@@ -6,7 +6,6 @@ const Header = () => {
     <header>
       <div className="tubby-toast">Tubby Toast</div>
       <nav>
-        <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/social-media">Social Media</Link>
         <Link to="/contact">Contact</Link>
