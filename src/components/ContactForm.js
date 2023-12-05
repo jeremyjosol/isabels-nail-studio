@@ -27,14 +27,14 @@ const ContactForm = () => {
           name='name' 
           value={formData.name} 
           onChange={handleChange} />
-
+        <br />
         <input 
           placeholder='Email'
           type='email' 
           name='email' 
           value={formData.email}
           onChange={handleChange} />
-
+        <br />
         <textarea 
           placeholder='Custom message'
           name='message' 
