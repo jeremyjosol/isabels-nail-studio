@@ -14,18 +14,21 @@ const Services = () => {
       id: 2,
       name: 'Tubby Overlay',
       description: 'Add strength and durability to your natural nails. This is an add on to the Tubby Gel Mani',
-      price: 30
+      price: 30,
+      image: nailPhoto
     },
     {
       id: 3,
       name: 'Gel Extensions',
       description: 'Offered in short-XXL length. This is an alternative to acrylic nails. Includes 1 color of Korean or Japanese gel polish (+10 for XL or longer).',
-      price: 100
+      price: 100,
+      image: nailPhoto
     },
     {
       id: 4,
       name: 'Custom Nail Art',
       description: 'Prices vary depending on design and how detailed/elaborate it is. Contact to receive a quote. Pictures for inspiration are encouraged.',
+      image: nailPhoto
     },
   ];
 
