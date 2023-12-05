@@ -32,7 +32,7 @@ const Services = () => {
     },
   ];
 
-  
+
   const [selectedService, setSelectedService] = useState(null);
 
   const handleServiceClick = (service) => {
