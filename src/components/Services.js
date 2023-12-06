@@ -16,7 +16,7 @@ const Services = () => {
     {
       id: 2,
       name: 'Tubby Overlay',
-      description: 'Add strength and durability to your natural nails. This is an add on to the Tubby Gel Mani',
+      description: 'Add strength and durability to your natural nails. *This is an add on to the Tubby Gel Mani.*',
       price: 30,
       image: tubbyOverlay
     },
@@ -30,7 +30,8 @@ const Services = () => {
     {
       id: 4,
       name: 'Custom Nail Art',
-      description: 'Prices vary depending on design and how detailed/elaborate it is. Contact to receive a quote. Pictures for inspiration are encouraged.',
+      description: 'Prices vary depending on design and how detailed/elaborate it is. Contact to receive a quote. Pictures for inspiration are strongly encouraged!',
+      price: '40-100+',
       image: tubbyNailArt
     },
   ];
@@ -60,8 +61,9 @@ const Services = () => {
         <button className="btn btn-outline-danger close-button" onClick={onClose}>
           <span>&times;</span>
         </button>
-        <h3>{service.name} | ${service.price}</h3>
+        <h3>{service.name}</h3>
         <p className="light">{service.description}</p>
+        <h4>${service.price}</h4>
       </div>
     </div>
   );
