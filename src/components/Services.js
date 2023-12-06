@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import nailPhoto from './../img/nail-art.jpg';
+import tubbyGelMani from './../img/tubby-gel-mani.jpg';
+import tubbyOverlay from './../img/tubby-overlay.jpg';
 
 const Services = () => {
   const servicesData = [
@@ -8,14 +10,14 @@ const Services = () => {
       name: 'Tubby Gel Mani',
       description: 'Dry manicure on natural nails. Includes detailed cuticle work with an efile. Includes 1 color of Korean or Japanese gel polish.',
       price: 60,
-      image: nailPhoto
+      image: tubbyGelMani
     },
     {
       id: 2,
       name: 'Tubby Overlay',
       description: 'Add strength and durability to your natural nails. This is an add on to the Tubby Gel Mani',
       price: 30,
-      image: nailPhoto
+      image: tubbyOverlay
     },
     {
       id: 3,
@@ -32,6 +34,34 @@ const Services = () => {
     },
   ];
 
+  const ServiceCard = ({ service, onClick, isSelected }) => (
+    <div
+      className={`service-card ${isSelected ? 'selected' : ''}`}
+      onClick={() => onClick(service)}
+    >
+      <div
+        className="service-image"
+        style={{
+          backgroundImage: `url(${service.image})`,
+        }}
+      >
+        <div className="service-overlay"></div>
+        <div className="service-name">
+          {service.name.toUpperCase()}
+        </div>
+      </div>
+    </div>
+  );
+  
+  const ServiceDetailsCard = ({ service, onClose }) => (
+    <div className="service-details-overlay">
+      <div className="service-details-card">
+        <h3>{service.name} | ${service.price}</h3>
+        <p className="light">{service.description}</p>
+        <button className='btn btn-info' onClick={onClose}>Close</button>
+      </div>
+    </div>
+  );
 
   const [selectedService, setSelectedService] = useState(null);
 
@@ -47,32 +77,20 @@ const Services = () => {
     <section className="services">
       <div className="services-list">
         {servicesData.map((service) => (
-          <div
+          <ServiceCard
             key={service.id}
-            className={`service-card ${selectedService === service ? 'selected' : ''}`}
-            onClick={() => handleServiceClick(service)}
-          >
-            <div
-              className="service-image"
-              style={{
-                backgroundImage: `url(${service.image})`,
-              }}
-            >
-              <div className="service-overlay"></div>
-              <div className="service-name">
-                {service.name.toUpperCase()}
-              </div>
-            </div>
-          </div>
+            service={service}
+            onClick={handleServiceClick}
+            isSelected={selectedService === service}
+          />
         ))}
       </div>
 
       {selectedService && (
-        <div className="service-details">
-          <h3>{selectedService.name} | ${selectedService.price}</h3>
-          <p className="light">{selectedService.description}</p>
-          <button className='btn btn-info' onClick={handleCloseDetails}>Close</button>
-        </div>
+        <ServiceDetailsCard
+          service={selectedService}
+          onClose={handleCloseDetails}
+        />
       )}
     </section>
   );
