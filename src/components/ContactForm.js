@@ -10,6 +10,8 @@ const ContactForm = () => {
     message: '',
   });
 
+  const [messageSent, setMessageSent] = useState(false);
+
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
@@ -25,6 +27,7 @@ const ContactForm = () => {
       console.log('Collection Reference:', collectionRef);
       const docRef = await addDoc(collectionRef, { ...formData });
       console.log('Document ID:', docRef.id);
+      setMessageSent(true);
     } catch (error) {
       console.error('Error:', error);
     }
@@ -35,6 +38,9 @@ const ContactForm = () => {
       <h3>
         <AiOutlineMail className="icons" /> Contact
       </h3>
+      {messageSent ? (
+        <p>Your message has been sent! Thank you for reaching out.</p>
+      ) : (
       <form onSubmit={(event) => handleSubmit(event, formData)}>
         <div className="mb-3">
           <input
@@ -69,6 +75,7 @@ const ContactForm = () => {
           Submit
         </button>
       </form>
+      )}
     </section>
   );
 };
