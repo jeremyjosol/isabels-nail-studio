@@ -11,7 +11,6 @@ const Header = () => {
           <img src={logo} alt='logo' className='logo-image' />
           <h1 className='brand'><FaStar className='icons' /> Tubby Toast <FaStar className='icons' /></h1>
           <h2 className='brand'>통통한 토스트</h2>
-          <hr className="line" />
         </div>        
       </div>
       <nav>

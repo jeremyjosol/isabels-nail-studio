@@ -13,7 +13,8 @@ const About = () => {
     <section className="about">
       <p>
       Hi, my name is Isabel!
-      <br /> I'm a PDX-based licensed manicurist specializing in Korean and Japanese
+      <br /> I'm a PDX-based licensed manicurist 
+      <br />specializing in Korean and Japanese
       <br />
       <span className='light'>gel extensions, soft gel overlays, & gel nail art.</span></p>
       

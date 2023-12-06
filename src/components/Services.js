@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import nailPhoto from './../img/nail-art.jpg';
 import tubbyGelMani from './../img/tubby-gel-mani.jpg';
 import tubbyOverlay from './../img/tubby-overlay.jpg';
+import tubbyGelExtensions from './../img/tubby-gel-extensions.jpg';
+import tubbyNailArt from './../img/tubby-nail-art.jpg';
 
 const Services = () => {
   const servicesData = [
@@ -24,13 +25,13 @@ const Services = () => {
       name: 'Gel Extensions',
       description: 'Offered in short-XXL length. This is an alternative to acrylic nails. Includes 1 color of Korean or Japanese gel polish (+10 for XL or longer).',
       price: 100,
-      image: nailPhoto
+      image: tubbyGelExtensions
     },
     {
       id: 4,
       name: 'Custom Nail Art',
       description: 'Prices vary depending on design and how detailed/elaborate it is. Contact to receive a quote. Pictures for inspiration are encouraged.',
-      image: nailPhoto
+      image: tubbyNailArt
     },
   ];
 
