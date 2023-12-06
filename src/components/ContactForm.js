@@ -34,7 +34,7 @@ const ContactForm = () => {
         <AiOutlineMail className="icons" /> Contact
       </h3>
       {messageSent ? (
-        <p>Your message has been sent! Thank you for reaching out.</p>
+        <p>Your message has been sent! .</p>
       ) : (
       <form onSubmit={(event) => handleSubmit(event, formData)}>
         <div className="mb-3">
