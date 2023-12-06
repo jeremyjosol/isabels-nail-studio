@@ -40,7 +40,7 @@ const Services = () => {
       onClick={() => onClick(service)}
     >
       <div
-        className="service-image"
+        className={`service-image ${isSelected ? 'no-hover' : ''}`}
         style={{
           backgroundImage: `url(${service.image})`,
         }}
@@ -53,18 +53,17 @@ const Services = () => {
     </div>
   );
   
-  const ServiceDetailsCard = ({ service, onClose, isSelected }) => (
-    <div className={`service-details-overlay ${isSelected ? 'selected' : ''}`}>
+  const ServiceDetailsCard = ({ service, onClose }) => (
+    <div className="service-details-overlay">
       <div className="service-details-card">
-        {!isSelected && (
-          <h3>{service.name} | ${service.price}</h3>
-        )}
+        <button className="btn btn-outline-danger close-button" onClick={onClose}>
+          <span>&times;</span>
+        </button>
+        <h3>{service.name} | ${service.price}</h3>
         <p className="light">{service.description}</p>
-        <button className='btn btn-info' onClick={onClose}>Close</button>
       </div>
     </div>
   );
-  
   
   const [selectedService, setSelectedService] = useState(null);
   
