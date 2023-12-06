@@ -53,15 +53,18 @@ const Services = () => {
     </div>
   );
   
-  const ServiceDetailsCard = ({ service, onClose }) => (
-    <div className="service-details-overlay">
+  const ServiceDetailsCard = ({ service, onClose, isSelected }) => (
+    <div className={`service-details-overlay ${isSelected ? 'selected' : ''}`}>
       <div className="service-details-card">
-        <h3>{service.name} | ${service.price}</h3>
+        {!isSelected && (
+          <h3>{service.name} | ${service.price}</h3>
+        )}
         <p className="light">{service.description}</p>
         <button className='btn btn-info' onClick={onClose}>Close</button>
       </div>
     </div>
   );
+  
   
   const [selectedService, setSelectedService] = useState(null);
   
@@ -94,6 +97,6 @@ const Services = () => {
       )}
     </section>
   );
-      }  
+}  
 
 export default Services;
