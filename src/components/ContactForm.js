@@ -60,7 +60,7 @@ const ContactForm = () => {
         <div className="mb-3">
           <textarea
             className="form-control"
-            placeholder="Custom message"
+            placeholder="Questions, comments, concerns...?"
             name="message"
             value={formData.message}
             onChange={handleChange}
