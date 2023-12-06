@@ -62,17 +62,17 @@ const Services = () => {
       </div>
     </div>
   );
-
+  
   const [selectedService, setSelectedService] = useState(null);
-
+  
   const handleServiceClick = (service) => {
     setSelectedService(service);
   };
-
+  
   const handleCloseDetails = () => {
     setSelectedService(null);
   };
-
+  
   return (
     <section className="services">
       <div className="services-list">
@@ -85,7 +85,7 @@ const Services = () => {
           />
         ))}
       </div>
-
+  
       {selectedService && (
         <ServiceDetailsCard
           service={selectedService}
@@ -94,6 +94,6 @@ const Services = () => {
       )}
     </section>
   );
-};
+      }  
 
 export default Services;
