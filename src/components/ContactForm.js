@@ -30,7 +30,6 @@ const ContactForm = () => {
     }
   };
 
-  
   return (
     <section className="contact-form container mt-3">
       <h3>
