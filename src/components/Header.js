@@ -8,10 +8,16 @@ const Header = () => {
     <header>
       <div className='tubby-toast'>
         <div className="logo-container">
-          <img src={logo} alt='logo' className='logo-image' />
-          <h1 className='brand'><FaStar className='icons' /> Tubby Toast <FaStar className='icons' /></h1>
-          <h2 className='brand'>통통한 토스트</h2>
-        </div>        
+          <Link to='/'>
+            <img src={logo} alt='logo' className='logo-image' />
+          </Link>
+          <Link to='/' className='brand'>
+            <h1><FaStar className='icons' /> Tubby Toast <FaStar className='icons' /></h1>
+          </Link>
+          <Link to='/' className='brand'>
+            <h2>통통한 토스트</h2>
+          </Link>
+        </div>
       </div>
       <nav>
         <Link to='/about'>About</Link>
@@ -24,4 +30,3 @@ const Header = () => {
 };
 
 export default Header;
-
