@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { AiOutlineMail } from "react-icons/ai";
+import { collection, addDoc } from 'firebase/firestore';
+import db from './../firebase.js';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -10,20 +12,31 @@ const ContactForm = () => {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event, formData) => {
     event.preventDefault();
-    console.log('Test data:', formData);
+    console.log('Form Data before submission:', formData);
+  
+    try {
+      console.log('formData:', { ...formData });
+      const collectionRef = collection(db, 'clients');
+      console.log('Collection Reference:', collectionRef);
+      const docRef = await addDoc(collectionRef, { ...formData });
+      console.log('Document ID:', docRef.id);
+    } catch (error) {
+      console.error('Error:', error);
+    }
   };
 
+  
   return (
     <section className="contact-form container mt-3">
       <h3>
         <AiOutlineMail className="icons" /> Contact
       </h3>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={(event) => handleSubmit(event, formData)}>
         <div className="mb-3">
           <input
             className="form-control"
