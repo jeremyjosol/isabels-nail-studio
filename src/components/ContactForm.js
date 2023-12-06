@@ -19,17 +19,12 @@ const ContactForm = () => {
 
   const handleSubmit = async (event, formData) => {
     event.preventDefault();
-    console.log('Form Data before submission:', formData);
   
     try {
-      console.log('formData:', { ...formData });
       const collectionRef = collection(db, 'clients');
-      console.log('Collection Reference:', collectionRef);
-      const docRef = await addDoc(collectionRef, { ...formData });
-      console.log('Document ID:', docRef.id);
+      await addDoc(collectionRef, { ...formData });
       setMessageSent(true);
     } catch (error) {
-      console.error('Error:', error);
     }
   };
 
