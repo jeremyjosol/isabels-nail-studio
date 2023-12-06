@@ -108,6 +108,10 @@ h2 {
   transition: filter 0.3s ease; 
 }
 
+.service-image:hover{
+  cursor: pointer;
+}
+
 .service-overlay {
   position: absolute;
   top: 0;
