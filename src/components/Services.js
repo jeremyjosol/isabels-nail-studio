@@ -61,9 +61,9 @@ const Services = () => {
         <button className="btn btn-outline-danger close-button" onClick={onClose}>
           <span>&times;</span>
         </button>
-        <h3>{service.name}</h3>
+        <h3 className='details-name'>{service.name.toUpperCase()}</h3>
         <p className="light">{service.description}</p>
-        <h4>${service.price}</h4>
+        <h4 className='details-price'>${service.price}</h4>
       </div>
     </div>
   );
