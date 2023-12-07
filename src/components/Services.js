@@ -51,7 +51,8 @@ const Services = () => {
           backgroundImage: `url(${service.image})`,
         }}
       >
-        <div className="service-overlay"></div>
+        <div className="service-overlay">
+        </div>
         <div className="service-name">
           {service.name.toUpperCase()}
         </div>
@@ -62,12 +63,23 @@ const Services = () => {
   const ServiceDetailsCard = ({ service, onClose }) => (
     <div className="service-details-overlay">
       <div className="service-details-card">
-        <button className="btn btn-outline-danger close-button" onClick={onClose}>
-          <span>&times;</span>
+        <button 
+          className="btn btn-outline-danger close-button" 
+          onClick={onClose}
+        >
+          <span>
+            &times;
+          </span>
         </button>
-        <h3 className='details-name'>{service.name.toUpperCase()} |         <span className='details-price'>${service.price}</span>
-</h3> 
-        <p className="details-light">{service.description}</p>
+        <h3 className='details-name'>
+          {service.name.toUpperCase()} | 
+          <span className='details-price'>
+            ${service.price}
+          </span>
+        </h3> 
+        <p className="details-light">
+          {service.description}
+        </p>
       </div>
     </div>
   );
@@ -92,8 +104,13 @@ const Services = () => {
 
   return (
     <section className="services">
-      <h3 className='service'><FaHandHoldingHeart className='icons' /> Services </h3>
-      <p className='light'>* Click service for info.</p>
+      <h3 className='service'>
+        <FaHandHoldingHeart className='icons' /> 
+        Services 
+      </h3>
+      <p className='light'>
+        * Click service for info.
+      </p>
       <hr className='line' />
       <br />
       <Slider {...settings}>

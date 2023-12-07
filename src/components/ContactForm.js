@@ -15,7 +15,10 @@ const ContactForm = () => {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+    setFormData((prevFormData) => ({ 
+      ...prevFormData, 
+      [name]: value 
+    }));
   };
 
   const handleSubmit = async (event, formData) => {
@@ -23,7 +26,10 @@ const ContactForm = () => {
   
     try {
       const collectionRef = collection(db, 'clients');
-      await addDoc(collectionRef, { ...formData, timestamp: serverTimestamp(), });
+      await addDoc(collectionRef, { 
+        ...formData, 
+        timestamp: serverTimestamp(), 
+      });
       setMessageSent(true);
     } catch (error) {
     }
@@ -37,7 +43,9 @@ const ContactForm = () => {
       <hr className='line' />
       <br />
       {messageSent ? (
-        <p>Your message has been sent! I appreciate your patience and will respond within a few business days. <CgSmile className='icons' /></p>
+        <p>
+          Your message has been sent! I appreciate your patience and will respond within a few business days. <CgSmile className='icons' />
+        </p>
       ) : (
       <form onSubmit={(event) => handleSubmit(event, formData)}>
         <div className="mb-3">
@@ -48,6 +56,7 @@ const ContactForm = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
+            required
           />
         </div>
         <div className="mb-3">
@@ -58,6 +67,7 @@ const ContactForm = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
+            required
           />
         </div>
         <div className="mb-3">
@@ -67,9 +77,13 @@ const ContactForm = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
+            required
           />
         </div>
-        <button type="submit" className="btn btn-info submit">
+        <button 
+          type="submit" 
+          className="btn btn-info submit"
+        >
           SUBMIT
         </button>
       </form>

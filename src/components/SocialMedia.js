@@ -11,13 +11,17 @@ const SocialMedia = () => {
         rel="noopener noreferrer"
       >
         <h3 className='instagram'>
-          <FaInstagram className='icons' /> Instagram
+          <FaInstagram className='icons' /> 
+          Instagram
         </h3>
       </a>
       <hr className='line' />
       <br />
       <div className='feed'>
-        <InstagramEmbed url="https://www.instagram.com/nails.tubbytoast" width={328} />
+        <InstagramEmbed 
+          url="https://www.instagram.com/nails.tubbytoast" 
+          width={328} 
+        />
       </div>
     </section>
   );

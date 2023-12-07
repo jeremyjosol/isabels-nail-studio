@@ -13,8 +13,8 @@ import './transition.css';
 const App = () => {
   return (
     <Router>
-        <Header />
-        <div className='about'>
+      <Header />
+      <div className='about'>
         <Routes>
           <Route
             path='/'
