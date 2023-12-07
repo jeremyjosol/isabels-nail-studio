@@ -25,6 +25,7 @@ const Header = () => {
         <Link to='/social-media'>Social Media</Link>
         <Link to='/contact'>Contact</Link>
       </nav>
+      <hr className='line' />
     </header>
   );
 };

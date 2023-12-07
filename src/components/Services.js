@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import tubbyGelMani from './../img/tubby-gel-mani.jpg';
 import tubbyOverlay from './../img/tubby-overlay.jpg';
 import tubbyGelExtensions from './../img/tubby-gel-extensions.jpg';
@@ -54,7 +57,7 @@ const Services = () => {
       </div>
     </div>
   );
-  
+
   const ServiceDetailsCard = ({ service, onClose }) => (
     <div className="service-details-overlay">
       <div className="service-details-card">
@@ -67,20 +70,28 @@ const Services = () => {
       </div>
     </div>
   );
-  
+
   const [selectedService, setSelectedService] = useState(null);
-  
+
   const handleServiceClick = (service) => {
     setSelectedService(service);
   };
-  
+
   const handleCloseDetails = () => {
     setSelectedService(null);
   };
-  
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <section className="services">
-      <div className="services-list">
+      <Slider {...settings}>
         {servicesData.map((service) => (
           <ServiceCard
             key={service.id}
@@ -89,8 +100,8 @@ const Services = () => {
             isSelected={selectedService === service}
           />
         ))}
-      </div>
-  
+      </Slider>
+
       {selectedService && (
         <ServiceDetailsCard
           service={selectedService}
@@ -99,6 +110,6 @@ const Services = () => {
       )}
     </section>
   );
-}  
+};
 
 export default Services;
