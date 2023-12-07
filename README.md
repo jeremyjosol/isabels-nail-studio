@@ -9,9 +9,12 @@ It utilizes React for the user interface and Firebase as the cloud-based Backend
 
 > ### Desktop splash
 
-<img src='./src/img/tubby-toast-mobile.jpg'>
+<div align="center">
+<img src='./src/img/tubby-toast-mobile.jpg' width="240px" height="420px">
 
 > ### Mobile splash
+
+</div>
 
 ## Technologies Used
 
