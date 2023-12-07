@@ -93,7 +93,7 @@ const Services = () => {
   return (
     <section className="services">
       <h3 className='service'><FaHandHoldingHeart className='icons' /> Services </h3>
-      <p className='light'>* Click service for details.</p>
+      <p className='light'>* Click service for info.</p>
       <hr className='line' />
       <br />
       <Slider {...settings}>
