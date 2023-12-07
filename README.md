@@ -5,14 +5,18 @@ This project is a minimalistic nail studio management system created for our cli
 
 It utilizes React for the user interface and Firebase as the cloud-based Backend-as-a-Service (BaaS) solution for handling her client inquiries securely. Notably, the implementation of transitional effects and animations enhances the overall user experience, making the application both functional and enjoyable.
 
+<div align="center">
 <img src='./src/img/tubby-toast-main.jpg'>
 
-> ### Desktop splash
+> #### Desktop splash
 
-<div align="center">
-<img src='./src/img/tubby-toast-mobile.jpg' width="240px" height="420px">
+-------
 
-> ### Mobile splash
+<img src='./src/img/tubby-toast-mobile.jpg' width="350px" height="520px">
+
+> #### Mobile splash
+
+-------
 
 </div>
 
