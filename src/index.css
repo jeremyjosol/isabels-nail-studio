@@ -88,28 +88,29 @@ img {
 }
 
 .hero h2 {
-  font-size: 2.4em;
+  font-size: 2.0em;
+  padding-top: 3px;
   margin-bottom: 0px;
 }
 
 @media (max-width: 850px) {
   .hero h2 {
-    font-size: 2.0em;
+    font-size: 1.8em;
     padding-top: 3px;
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 880px) {
   .hero h2 {
-    font-size: 2.0em;
+    font-size: 1.8em;
     padding-top: 3px;
   }
 }
 
 @media (max-width: 400px) {
   .hero h2 {
-    font-size: 1.9em;
-    padding-top: 3.5px;
+    font-size: 1.8em;
+    padding-top: 4.0px;
   }
 }
 
