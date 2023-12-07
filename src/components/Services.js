@@ -105,8 +105,7 @@ const Services = () => {
   return (
     <section className="services">
       <h3 className='service'>
-        <FaHandHoldingHeart className='icons' /> 
-        Services 
+        <FaHandHoldingHeart className='icons' />  Services 
       </h3>
       <p className='light'>
         * Click service for info.

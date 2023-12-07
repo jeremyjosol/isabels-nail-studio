@@ -8,6 +8,7 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phoneNumber: '',
     message: '',
   });
 
@@ -44,7 +45,7 @@ const ContactForm = () => {
       <br />
       {messageSent ? (
         <p>
-          Your message has been sent! I appreciate your patience and will respond within a few business days. <CgSmile className='icons' />
+          Your message has been sent! I appreciate your patience and will get back to you as soon as possible. <CgSmile className='icons' />
         </p>
       ) : (
       <form onSubmit={(event) => handleSubmit(event, formData)}>
@@ -62,12 +63,22 @@ const ContactForm = () => {
         <div className="mb-3">
           <input
             className="form-control"
-            placeholder="Email"
+            placeholder="Email Address"
             type="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
             required
+          />
+        </div>
+        <div className="mb-3">
+          <input
+            className="form-control"
+            placeholder="Phone Number (optional)"
+            type="phone-number"
+            name="phone-number"
+            value={formData.phoneNumber}
+            onChange={handleChange}
           />
         </div>
         <div className="mb-3">

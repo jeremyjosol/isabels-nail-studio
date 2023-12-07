@@ -20,7 +20,7 @@ const About = () => {
         <br />
         <span className='light'>gel extensions, soft gel overlays, & gel nail art.</span>
       </p>
-      <p>For consultations or inquiries/bookings,
+      <p>For inquiries/bookings,
         <br />please contact me on either
         <br /> my Instagram or contact form.
       </p>

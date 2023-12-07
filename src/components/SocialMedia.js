@@ -11,8 +11,7 @@ const SocialMedia = () => {
         rel="noopener noreferrer"
       >
         <h3 className='instagram'>
-          <FaInstagram className='icons' /> 
-          Instagram
+          <FaInstagram className='icons' /> Instagram
         </h3>
       </a>
       <hr className='line' />
