@@ -14,9 +14,21 @@ code {
     monospace;
 }
 
+.tubby-toast {
+  margin-top: -10px;
+}
+
+.logo-image {
+  transition: transform 0.3s ease-in-out; 
+  padding-top: 5px;
+}
+
+.logo-image:hover {
+  transform: scale(1.1) translate(0, -5px) rotate(5deg);}
+
 img {
-  width: 146px;
-  height: 135px;
+  width: 125px;
+  height: 120px;
   border-radius: 125px;
 }
 
@@ -64,6 +76,15 @@ a:hover {
 
 .brand:hover {
   color: rgb(255, 182, 250);
+}
+
+.brand-symbols {
+  color: rgb(255, 182, 250);
+  text-shadow: 0 0 10px rgba(246, 205, 243, 0.8);
+}
+
+.brand-symbols:hover {
+  color: rgb(173, 253, 192);
 }
 
 .about, .services, .details {
