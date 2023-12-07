@@ -1,12 +1,12 @@
 body {
   margin: auto;
   text-align: center;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(100deg, #ffbdf4, #e6460cdb, #b28cec);
   min-height: 100vh;
-  color: black;
+  color: #ffffff;
 }
 
 code {
@@ -15,7 +15,7 @@ code {
 }
 
 .tubby-toast {
-  margin-top: -50px;
+  margin-top: -75px;
 }
 
 .links {
@@ -25,10 +25,16 @@ code {
 }
 
 .links a {
+  font-size: 13.5px;
+  font-weight: bolder;
   color: pink;
   flex-grow: 1;
   text-align: center;
   margin-right: 5px;
+}
+
+.links a:hover, .links a:active, .links a:focus {
+  color: rgb(173, 253, 192);
 }
 
 .logo-image {
@@ -52,23 +58,18 @@ img {
 }
 
 .hero h1 {
-  font-size: 1.8em;
+  font-size: 1.9em;
   margin-bottom: 15px;
 }
 
 .hero h2 {
-  font-size: 2.3em;
+  font-size: 2.4em;
   margin-bottom: 0px;
-  color: #98eaff;
 }
 
 .hero h3 {
   font-size: 1.5em;
   margin-bottom: 0px;
-}
-
-.hero-color {
-  color: pink;
 }
 
 a {
@@ -92,8 +93,8 @@ a:hover {
 }
 
 .about, .services, .details {
-  font-size: 15px;
-  width: 350px;
+  font-size: 16.8px;
+  width: 420px;
   margin: auto;
   margin-top: 15px;
   padding-bottom: 20px;
@@ -111,7 +112,8 @@ h1 {
   font-size: 3.4em;
 }
 
-h1 .icons {
+.star-icon {
+  color: rgb(255, 255, 126);
   font-size: 0.45em; 
   display: inline-block; 
   position: relative; 
@@ -128,8 +130,8 @@ h1 .icons {
 }
 
 h2 {
-  margin-top: -18px;
-  font-size: 2.4em;
+  margin-top: -20px;
+  font-size: 1.5em;
   font-weight: lighter;
 }
 
@@ -141,20 +143,21 @@ h2 {
   font-size: 16px;
 }
 
-.icons {
+.icons, .star-icon {
   vertical-align: middle;
 }
 
 .service-card {
   position: relative;
   overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
 .service-image {
   margin-bottom: 20px;
   background-size: cover;
   background-position: center;
-  width: 350px;
+  width: 420px;
   height: 420px;
   border-radius: 10px;
   position: relative;
@@ -174,14 +177,23 @@ h2 {
   background-color: rgba(0, 0, 0, 0.476);
   border-radius: 10px;
   transition: background-color 0.3s ease;
+  color: rgba(0, 0, 0, 0);
 }
 
 .service-card:hover .service-image {
-  filter: brightness(80%);
+  filter: brightness(100%);
+  color: rgba(0, 0, 0, 0);
 }
 
 .service-card:hover .service-overlay {
   background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+}
+
+.service-card:hover .service-name {
+  z-index: 0;
+  color: rgba(0, 0, 0, 0);
+  transition: z-index 0.3s ease, color 0.3s ease
 }
 
 .service-name {
@@ -190,9 +202,10 @@ h2 {
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 1; 
-  color: white;
-  font-size: 1.5em;
-  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  font-weight: lighter;
+  transition: z-index 0.3s ease, color 0.3s ease
 }
 
 .details-name {
@@ -259,7 +272,7 @@ h2 {
 }
 
 .follow-up {
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 
 .feed {
@@ -275,8 +288,8 @@ h2 {
 
 .instagram {
   font-size: 1.8em;
-  color: black;
-  margin-top: -10px;
+  color: white;
+  margin-top: -18px;
 }
 
 .explore { 
@@ -298,5 +311,12 @@ h2 {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0;
     margin-bottom: 25px; 
+  }
+}
+
+@media (max-width: 991px) {
+  .tubby-toast {
+
+  margin-top: -50px;
   }
 }

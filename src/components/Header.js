@@ -12,10 +12,10 @@ const Header = () => {
 
         <Navbar.Collapse id="basic-navbar-nav" className="ml-auto justify-content-between">
           <Nav className="links">
-            <Nav.Link as={Link} to='/about'>About</Nav.Link>
-            <Nav.Link as={Link} to='/services'>Services</Nav.Link>
-            <Nav.Link as={Link} to='/social-media'>Social Media</Nav.Link>
-            <Nav.Link as={Link} to='/contact'>Contact</Nav.Link>
+            <Nav.Link as={Link} to='/about'>ABOUT</Nav.Link>
+            <Nav.Link as={Link} to='/services'>SERVICES</Nav.Link>
+            <Nav.Link as={Link} to='/social-media'>SOCIAL MEDIA</Nav.Link>
+            <Nav.Link as={Link} to='/contact'>CONTACT</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -23,7 +23,7 @@ const Header = () => {
       <div className='tubby-toast'>
         <Link to='/'>
         <img src={logo} alt='logo' className='logo-image' />
-          <h1 className='brand'><FaStar className='icons' /> Tubby Toast <FaStar className='icons' /></h1>
+          <h1 className='brand'><FaStar className='star-icon' /> TUBBYTOAST <FaStar className='star-icon' /></h1>
         </Link>
         <Link to='/'>
           <h2 className='brand'>통통한 토스트</h2>
