@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { AiOutlineMail } from "react-icons/ai";
-import { collection, addDoc } from 'firebase/firestore';
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import db from './../firebase.js';
+import { CgSmile } from "react-icons/cg";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -22,7 +23,7 @@ const ContactForm = () => {
   
     try {
       const collectionRef = collection(db, 'clients');
-      await addDoc(collectionRef, { ...formData });
+      await addDoc(collectionRef, { ...formData, timestamp: serverTimestamp(), });
       setMessageSent(true);
     } catch (error) {
     }
@@ -36,7 +37,7 @@ const ContactForm = () => {
       <hr className='line' />
       <br />
       {messageSent ? (
-        <p>Your message has been sent! .</p>
+        <p>Your message has been sent! I appreciate your patience and will respond within a few business days. <CgSmile className='icons' /></p>
       ) : (
       <form onSubmit={(event) => handleSubmit(event, formData)}>
         <div className="mb-3">
