@@ -106,6 +106,10 @@ a:hover {
   margin-top: -6px;
 }
 
+.about .light {
+  font-size: 14px;
+}
+
 .light {
   font-style: italic;
   font-size: 11px;
@@ -223,11 +227,19 @@ h3 {
 }
 
 .details-name {
-  color: rgb(255, 141, 166);
+  color: rgb(255, 255, 255);
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.details-light {
+  font-style: italic;
 }
 
 .details-price {
-  color: #ff9b76;
+  color: #ffffff;
+  margin-top: 25px;
+  font-size: 20px;
 }
 
 .service-card.selected .service-image {
@@ -249,7 +261,7 @@ h3 {
 
 .service-details-card {
   background: #000000d6;
-  color: pink;
+  color: rgb(255, 255, 255);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
