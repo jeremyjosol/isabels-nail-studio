@@ -88,29 +88,30 @@ img {
 }
 
 .hero h2 {
-  font-size: 2.0em;
+  font-size: 2.7em;
   padding-top: 3px;
   margin-bottom: 0px;
+  font-family: 'Lato', sans-serif;
 }
 
 @media (max-width: 850px) {
   .hero h2 {
-    font-size: 1.8em;
+    font-size: 1.7em;
     padding-top: 3px;
   }
 }
 
 @media (max-width: 880px) {
   .hero h2 {
-    font-size: 1.8em;
+    font-size: 1.7em;
     padding-top: 3px;
   }
 }
 
 @media (max-width: 400px) {
   .hero h2 {
-    font-size: 1.8em;
-    padding-top: 4.0px;
+    font-size: 1.6em;
+    padding-top: 4.2px;
   }
 }
 
