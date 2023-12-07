@@ -347,3 +347,20 @@ h2 {
   margin-top: -50px;
   }
 }
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  background-color: #33333300;
+  color: white;
+  text-align: center;
+  margin: auto;
+  margin-bottom: -12px;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 10px;
+  font-size: 8px;
+}

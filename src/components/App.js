@@ -6,6 +6,7 @@ import About from './About';
 import Services from './Services';
 import SocialMedia from './SocialMedia';
 import ContactForm from './ContactForm';
+import Footer from './Footer';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import './transition.css';
 
@@ -87,6 +88,7 @@ const App = () => {
           />
         </Routes>
       </div>
+      <Footer />
     </Router>
   );
 };
