@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Home';
 import Header from './Header';
 import About from './About';
 import Services from './Services';
@@ -14,6 +15,20 @@ const App = () => {
       <div className='about'>
         <Header />
         <Routes>
+          <Route
+            path='/'
+            element={
+              <TransitionGroup>
+                <CSSTransition
+                  key='home'
+                  timeout={500}
+                  classNames='route'
+                >
+                  <Home />
+                </CSSTransition>
+              </TransitionGroup>
+            }
+          />
           <Route
             path='/about'
             element={
