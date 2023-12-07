@@ -30,9 +30,12 @@ const ContactForm = () => {
 
   return (
     <section className="contact-form container mt-3">
+      <hr className='line' />
       <h3>
         <AiOutlineMail className="icons" /> Contact
       </h3>
+      <hr className='line' />
+      <br />
       {messageSent ? (
         <p>Your message has been sent! .</p>
       ) : (
@@ -67,7 +70,7 @@ const ContactForm = () => {
           />
         </div>
         <button type="submit" className="btn btn-info submit">
-          Submit
+          SUBMIT
         </button>
       </form>
       )}

@@ -2,26 +2,27 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import tubbyGelMani from './../img/tubby-gel-mani.jpg';
 import tubbyOverlay from './../img/tubby-overlay.jpg';
+import tubbyGelMani from './../img/tubby-gel-mani.jpg';
 import tubbyGelExtensions from './../img/tubby-gel-extensions.jpg';
 import tubbyNailArt from './../img/tubby-nail-art.jpg';
+import { FaHandHoldingHeart } from "react-icons/fa";
 
 const Services = () => {
   const servicesData = [
     {
       id: 1,
-      name: 'Tubby Gel Mani',
-      description: 'Dry manicure on natural nails. Includes detailed cuticle work with an efile. Includes 1 color of Korean or Japanese gel polish.',
-      price: 60,
-      image: tubbyGelMani
-    },
-    {
-      id: 2,
       name: 'Tubby Overlay',
       description: 'Add strength and durability to your natural nails. *This is an add on to the Tubby Gel Mani.*',
       price: 30,
       image: tubbyOverlay
+    },
+    {
+      id: 2,
+      name: 'Tubby Gel Mani',
+      description: 'Dry manicure on natural nails. Includes detailed cuticle work with an efile. Includes 1 color of Korean or Japanese gel polish.',
+      price: 60,
+      image: tubbyGelMani
     },
     {
       id: 3,
@@ -91,6 +92,10 @@ const Services = () => {
 
   return (
     <section className="services">
+      <hr className='line' />
+      <h3 className='service'><FaHandHoldingHeart className='icons' /> Services </h3>
+      <hr className='line' />
+      <br />
       <Slider {...settings}>
         {servicesData.map((service) => (
           <ServiceCard
