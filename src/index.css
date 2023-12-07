@@ -9,6 +9,12 @@ body {
   color: #ffffff;
 }
 
+@media (max-width: 767px) {
+  body {
+    background: linear-gradient(100deg, #ffbdf4, pink, #e6460cdb, rgb(213, 139, 218), #b28cec);
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -63,9 +69,47 @@ img {
   margin-bottom: 15px;
 }
 
+@media (max-width: 850px) {
+  .hero h1 {
+    font-size: 1.7em;
+  }
+}
+
+@media (max-width: 780px) {
+  .hero h1 {
+    font-size: 1.7em;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero h1 {
+    font-size: 1.6em;
+  }
+}
+
 .hero h2 {
   font-size: 2.4em;
   margin-bottom: 0px;
+}
+
+@media (max-width: 850px) {
+  .hero h2 {
+    font-size: 2.0em;
+    padding-top: 3px;
+  }
+}
+
+@media (max-width: 780px) {
+  .hero h2 {
+    font-size: 2.0em;
+    padding-top: 3px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero h2 {
+    font-size: 1.9em;
+  }
 }
 
 .hero h3 {
@@ -101,6 +145,12 @@ a:hover {
   padding-bottom: 20px;
 }
 
+@media (max-width: 850px) {
+  .about, .services, .details {
+    width: 350px;
+  }
+}
+
 .services {
   width: 350px;
   margin-top: -6px;
@@ -126,12 +176,30 @@ h1 {
   font-size: 3.4em;
 }
 
+@media (max-width: 767px) {
+  h1 {
+    font-size: 3.2em;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.6em;
+  }
+}
+
 .star-icon {
   color: rgb(255, 255, 126);
   font-size: 0.45em; 
   display: inline-block; 
   position: relative; 
   animation: rotate 5s linear infinite;
+}
+
+@media (max-width: 600px) {
+  .star-icon {
+    font-size: 0.39em; 
+  }
 }
 
 @keyframes rotate {
@@ -319,6 +387,18 @@ h3 {
   width: 390px;
 }
 
+@media (max-width: 850px) {
+  .submit {
+    width: 325px;
+  }
+}
+
+@media (max-width: 800px) {
+  .submit {
+    width: 325px;
+  }
+}
+
 .submit:hover {
   color: grey;
 }
@@ -354,6 +434,27 @@ h3 {
 
 .explore:hover, .book-now:hover {
   background-color: rgb(0, 0, 0);
+}
+
+@media (max-width: 850px) {
+  .explore, .book-now {
+    font-size: 11px;
+    width: 160px;
+  }
+}
+
+@media (max-width: 600px) {
+  .explore, .book-now {
+    font-size: 10px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 400px) {
+  .explore, .book-now {
+    font-size: 10px;
+    width: 150px;
+  }
 }
 
 @media (max-width: 991px) {

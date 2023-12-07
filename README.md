@@ -1,4 +1,4 @@
-# Tubby Toast
+# Tubby Toast (v1)
 
 ## About
 This project is a minimalistic nail studio management system created for our client, Isabel, and her business _'Tubby Toast'_. The application is designed to meet her unique design expectations and showcase her studio services with additional custom features. It utilizes React for the user interface and Firebase as the cloud-based Backend-as-a-Service (BaaS) solution for handling her client inquiries securely. Notably, the implementation of transitional effects and animations enhances the overall user experience, making the application both functional and enjoyable.
