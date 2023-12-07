@@ -4,7 +4,7 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(100deg, #ffbdf4, #e6460cdb, #b28cec);
+  background: linear-gradient(100deg, #ffbdf4, pink, #e6460cdb, rgb(213, 139, 218), #b28cec);
   min-height: 100vh;
   color: #ffffff;
 }
@@ -15,7 +15,7 @@ code {
 }
 
 .tubby-toast {
-  margin-top: -80px;
+  margin-top: -75px;
 }
 
 .links {
@@ -48,7 +48,7 @@ code {
 
 img {
   width: 128px;
-  height: 136px;
+  height: 130px;
   border-radius: 125px;
 }
 
@@ -94,7 +94,7 @@ a:hover {
 }
 
 .about, .services, .details {
-  font-size: 16.8px;
+  font-size: 15.6px;
   width: 420px;
   margin: auto;
   margin-top: 15px;
@@ -103,10 +103,13 @@ a:hover {
 
 .services {
   width: 350px;
+  margin-top: -6px;
 }
 
 .light {
   font-style: italic;
+  font-size: 12px;
+  margin-bottom: 2px;
 }
 
 h1 {
@@ -140,6 +143,10 @@ h2 {
   font-weight: lighter;
 }
 
+h3 {
+  margin-bottom: 2px;
+}
+
 .social-icons {
   margin: auto;
 }
@@ -163,7 +170,7 @@ h2 {
   background-size: cover;
   background-position: center;
   width: 350px;
-  height: 400px;
+  height: 395px;
   border-radius: 10px;
   position: relative;
   transition: filter 0.3s ease; 
@@ -363,4 +370,19 @@ h2 {
   margin: auto;
   margin-top: 10px;
   font-size: 8px;
+}
+
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
 }

@@ -5,7 +5,6 @@ import { InstagramEmbed } from 'react-social-media-embed';
 const SocialMedia = () => {
   return (
     <section className="social-media">
-      <hr className='line' />
       <a
         href="https://www.instagram.com/nails.tubbytoast"
         target="_blank"

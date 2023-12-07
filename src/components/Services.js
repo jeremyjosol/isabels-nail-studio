@@ -92,8 +92,8 @@ const Services = () => {
 
   return (
     <section className="services">
-      <hr className='line' />
       <h3 className='service'><FaHandHoldingHeart className='icons' /> Services </h3>
+      <p className='light'>* Click service for details.</p>
       <hr className='line' />
       <br />
       <Slider {...settings}>
