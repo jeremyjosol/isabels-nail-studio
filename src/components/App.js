@@ -12,8 +12,8 @@ import './transition.css';
 const App = () => {
   return (
     <Router>
+      <Header />
       <div className='about'>
-        <Header />
         <Routes>
           <Route
             path='/'
