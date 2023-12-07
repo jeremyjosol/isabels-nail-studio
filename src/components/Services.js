@@ -72,8 +72,7 @@ const Services = () => {
           </span>
         </button>
         <h3 className='details-name'>
-          {service.name.toUpperCase()} | 
-          <span className='details-price'>
+          {service.name.toUpperCase()} | <span className='details-price'>
             ${service.price}
           </span>
         </h3> 
